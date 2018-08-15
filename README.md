@@ -29,3 +29,7 @@ Installation:
 		-g, --getdetails  Get AWS S3 details
 		-d, --delete      Delete an S3 bucket
 		-c, --cost        Display the cost report
+		
+		
+		
+  3. Unit Test - Not done!
