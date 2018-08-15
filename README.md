@@ -11,7 +11,7 @@ Pre-requisites:
 	Botocore	: https://botocore.readthedocs.io/en/latest/
 
 Installation:
-  1. Once the code is downloaded, run th einstallation script(installscript)
+  1. Once the code is downloaded, run the installation script(installscript)
             [user@hostname]# ./installscript
 	   
 	Output:
