@@ -29,20 +29,20 @@ and saving the following lines in the file:
 
 ## Installation:
   1. Once the code is downloaded, run the installation script(installscript)
-            [user@hostname]# ./installscript
-	   
-	Output:
-	    Where do you want to install(For example: /opt/aws-tool): /opt/aws-tool
-    	    Installing the packages...
-	    Creating symlink...
-    	    Installation completed!
-	    
+           
+	[user@hostname]# ./installscript
+	Where do you want to install(For example: /opt/aws-tool): /opt/aws-tool
+    	Installing the packages...
+	Creating symlink...
+    	Installation completed!
+	
             
   2. On installation, we can run the tool from any directory. Below is a demonstration of the command that can be run.
     
-  	[user@hostname]# aws-s3-cli -h
-	usage: aws-s3-cli [-h] [-g] [-d] [-c]
+  	
+	[user@hostname]# aws-s3-cli -h
 	
+	usage: aws-s3-cli [-h] [-g] [-d] [-c]
 	Python tool to get AWS S3 details
 	
 	optional arguments:
