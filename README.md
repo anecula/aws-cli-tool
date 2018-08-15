@@ -15,8 +15,7 @@ Installation:
     	    Installing the packages...
 	    Creating symlink...
     	    Installation completed!
-	    Python tool to get AWS S3 details
-
+	    
             
   2. On installation, we can run the tool from any directory. Below is a demonstration of the command that can be run.
     
