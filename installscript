@@ -1,8 +1,17 @@
 #!/bin/bash
 
 # Install pre-requisites
-#	yum install python-pip -y
-#	pip install boto3 botocore PrettyTable
+python --version
+
+if [ $? == 0 ]; then
+        echo "Python installed"
+#       yum install python-pip -y
+#       pip install boto3
+#       pip install botocore
+#	pip install PrettyTable
+else
+        echo "Python and associated libraries are required for this tool. Please read the documentation for details"
+fi
 
 # Install the packages
 
@@ -14,11 +23,9 @@ if [ -d $install_dir ]; then
 	cp -rf ./packages/* $install_dir
 fi
 
-
 # Create Symlink
 echo "Creating symlink..."
 ln -sf $install_dir/aws-s3-cli.py /usr/bin/aws-s3-cli
 
 echo "Installation completed!"
-
 
