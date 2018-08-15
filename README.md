@@ -3,8 +3,11 @@ Simple tool to get AWS S3 details
 
 Pre-requisites:
   1. Python should be available
-  2. Python libraries boto3, botocore should be installed.(These may be also installed during the installation of the tool)
-
+  2. Python libraries: boto3, botocore and PrettyTable should be installed.
+  	(These may be also installed during the installation of the tool - can be enabled in the installation script)
+	PrettyTable: https://pypi.org/project/PrettyTable/
+	Boto3: https://boto3.readthedocs.io/en/latest/
+	Botocore: https://botocore.readthedocs.io/en/latest/
 
 Installation:
   1. Once the code is downloaded, run th einstallation script(installscript)
