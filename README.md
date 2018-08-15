@@ -1,7 +1,7 @@
-# aws-cli-tool
-Simple tool to get AWS S3 details
+## aws-cli-tool
+# Simple tool to get AWS S3 details
 
-Pre-requisites:
+## Pre-requisites:
   1. Python should be available
   2. Python libraries: boto3, botocore and PrettyTable should be installed.
   	(These may be also installed during the installation of the tool - can be enabled in the installation script)
@@ -10,7 +10,24 @@ Pre-requisites:
 	Boto3		: https://boto3.readthedocs.io/en/latest/
 	Botocore	: https://botocore.readthedocs.io/en/latest/
 
-Installation:
+## Basic Configuration
+
+We will need to setup AWS security credentials before tool is able
+to connect to AWS. We can do this by creating a file named "credentials" at ~/.aws/ 
+and saving the following lines in the file:
+
+    [default]
+    aws_access_key_id = <your access key id>
+    aws_secret_access_key = <your secret key>
+
+Also, we can use a specific region by creating a file named "config" at ~/.aws/ 
+and saving the following lines in the file:
+ 
+    [default]
+    region = <your region >
+
+
+## Installation:
   1. Once the code is downloaded, run the installation script(installscript)
             [user@hostname]# ./installscript
 	   
