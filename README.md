@@ -11,7 +11,7 @@ Pre-requisites:
 	Botocore	: https://botocore.readthedocs.io/en/latest/
 
 Installation:
-  1. Once the code is downloaded, run th einstallation script(installscript)
+  1. Once the code is downloaded, run the installation script(installscript)
             [user@hostname]# ./installscript
 	   
 	Output:
@@ -36,4 +36,4 @@ Installation:
 		
 		
 		
-  3. Unit Test - Not done!
+  3. NOT DONE - Unit tests and additional exception handling
