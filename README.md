@@ -36,4 +36,4 @@ Installation:
 		
 		
 		
-  3. Unit Test - Not done!
+  3. NOT DONE - Unit tests and additional exception handling
