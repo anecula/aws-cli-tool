@@ -1,15 +1,12 @@
 #!/bin/bash
 
 # Install pre-requisites
-#python --version
-
-#if [ $? == 0 ]; then
-#	yum install python-pip -y /dev/null
-#	yum install boto3 -y >> /dev/null
-#	yum install botocore -y >> /dev/null
-#fi
+#	yum install python-pip -y
+#	pip install boto3 botocore PrettyTable
 
 # Install the packages
+
+#Get the installation directory from user
 read -p "Where do you want to install(For example: /opt/aws-tool): " install_dir
 mkdir -p $install_dir
 if [ -d $install_dir ]; then
