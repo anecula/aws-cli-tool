@@ -5,6 +5,7 @@ import getalls3details as gs3
 import deletebucket as ds3
 import costreport as cr
 
+# Main function to get all the details and run the tool
 def main():
     # Assign description to the help doc
     parser = argparse.ArgumentParser(
@@ -20,11 +21,11 @@ def main():
     # Array for all arguments passed to script
     args = parser.parse_args()
     
-    if args.getdetails:
+    if args.getdetails:         # If true, get S3 details
 	gs3.getdetails()
-    elif args.delete:
+    elif args.delete:           # If true, delete a bucket
 	ds3.delbucket()
-    elif args.cost:
+    elif args.cost:             # if true, get the cost report
 	cr.costusage()
 
 if __name__ == '__main__':
