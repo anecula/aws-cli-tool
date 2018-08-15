@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Install pre-requisites
+#python --version
+
+#if [ $? == 0 ]; then
+#	yum install python-pip -y /dev/null
+#	yum install boto3 -y >> /dev/null
+#	yum install botocore -y >> /dev/null
+#fi
+
+# Install the packages
+read -p "Where do you want to install(For example: /opt/aws-tool): " install_dir
+mkdir -p $install_dir
+if [ -d $install_dir ]; then
+	echo "Installing the packages..."
+	cp -rf ./packages/* $install_dir
+fi
+
+
+# Create Symlink
+echo "Creating symlink..."
+ln -sf $install_dir/aws-s3-cli.py /usr/bin/aws-s3-cli
+
+echo "Installation completed!"
+
+
